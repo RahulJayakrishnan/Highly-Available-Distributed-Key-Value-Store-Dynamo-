@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hrjanardhan/Desktop/git_AOS/Project4/Server/gt_store.h
+strings.h
+-
+
+/home/hrjanardhan/Desktop/git_AOS/Project4/Server/main.cpp
+iostream
+-
+gt_store.h
+/home/hrjanardhan/Desktop/git_AOS/Project4/Server/gt_store.h
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+string.h
+-
+fstream
+-
+unistd.h
+-
+errno.h
+-
+time.h
+-
+vector
+-
+

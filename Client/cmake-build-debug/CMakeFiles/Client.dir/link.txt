@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Client.dir/main.cpp.o CMakeFiles/Client.dir/gt_client.cpp.o  -o Client 

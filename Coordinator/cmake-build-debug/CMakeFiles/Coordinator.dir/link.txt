@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread -g   CMakeFiles/Coordinator.dir/main.cpp.o  -o Coordinator 

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/gt_coord.h
+
+/home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/main.cpp
+iostream
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+string.h
+-
+fstream
+-
+unistd.h
+-
+errno.h
+-
+time.h
+-
+gt_coord.h
+/home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/gt_coord.h
+thread
+-
+vector
+-
+sys/time.h
+-
+

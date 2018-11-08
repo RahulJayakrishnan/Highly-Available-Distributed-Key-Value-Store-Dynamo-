@@ -1,0 +1,59 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_caea7/fast"
+make[1]: Entering directory '/home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_caea7.dir/build.make CMakeFiles/cmTC_caea7.dir/build
+make[2]: Entering directory '/home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_caea7.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_caea7.dir/CheckSymbolExists.c.o   -c /home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_caea7
+/home/hrjanardhan/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_caea7.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_caea7.dir/CheckSymbolExists.c.o  -o cmTC_caea7 
+CMakeFiles/cmTC_caea7.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_caea7.dir/build.make:97: recipe for target 'cmTC_caea7' failed
+make[2]: *** [cmTC_caea7] Error 1
+make[2]: Leaving directory '/home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_caea7/fast' failed
+make[1]: *** [cmTC_caea7/fast] Error 2
+make[1]: Leaving directory '/home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+File /home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_442c9/fast"
+make[1]: Entering directory '/home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_442c9.dir/build.make CMakeFiles/cmTC_442c9.dir/build
+make[2]: Entering directory '/home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_442c9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_442c9.dir/CheckFunctionExists.c.o   -c /home/hrjanardhan/Downloads/clion-2017.3.1/bin/cmake/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_442c9
+/home/hrjanardhan/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_442c9.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_442c9.dir/CheckFunctionExists.c.o  -o cmTC_442c9 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_442c9.dir/build.make:97: recipe for target 'cmTC_442c9' failed
+make[2]: *** [cmTC_442c9] Error 1
+make[2]: Leaving directory '/home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_442c9/fast' failed
+make[1]: *** [cmTC_442c9/fast] Error 2
+make[1]: Leaving directory '/home/hrjanardhan/Desktop/git_AOS/Project4/Coordinator/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
